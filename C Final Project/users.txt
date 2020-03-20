@@ -1,0 +1,4 @@
+username        password        L fullname             
+admin           admin           3 System_Manager      
+pavelh          pavelh          2 Pavel_heyets        
+shmulik         shmulik         1 Shmuel_Mauda        
