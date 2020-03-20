@@ -1,0 +1,1 @@
+Institute Advanced C Programming project. Simulation of business program for managing products and users with backup .txt files for LOG and linked lists of the system.
