@@ -16,7 +16,7 @@ int main(){
 	struct sockaddr_in serverAddr;
 	char buffer[100];
 	char userId[10];
-    char inout[6];
+    	char inout[6];
 
 	clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     
@@ -37,8 +37,8 @@ int main(){
 		exit(1);
 	}
 	printf("[+]Connected to Server.\n");
-    bzero(buffer, sizeof(buffer));
-    bzero(userId, sizeof(userId));
+    	bzero(buffer, sizeof(buffer));
+    	bzero(userId, sizeof(userId));
 
 	while(1){
         
@@ -58,16 +58,16 @@ int main(){
         printf("For 'CHECK IN' Enter -- 'IN' or 'in' \n");
         printf("For 'CHECK OUT' Enter -- 'OUT' or 'out' \n");
         printf("\n");
-		printf("[FROM]Client: \t");
-		scanf("%[^\n]%*c", buffer);
-		send(clientSocket, buffer, strlen(buffer), 0);
-		send(clientSocket, userId, strlen(userId), 0);
+	printf("[FROM]Client: \t");
+	scanf("%[^\n]%*c", buffer);
+	send(clientSocket, buffer, strlen(buffer), 0);
+	send(clientSocket, userId, strlen(userId), 0);
         
-		if(recv(clientSocket, buffer, 100, 0) < 0){
-			printf("[-]Error in receiving data.\n");
-		}else{
-			printf("[FROM]Server: \t%s\n", buffer);
-		}
+	if(recv(clientSocket, buffer, 100, 0) < 0){
+		printf("[-]Error in receiving data.\n");
+	}else{
+		printf("[FROM]Server: \t%s\n", buffer);
+	}
         bzero(buffer, sizeof(buffer));
         bzero(userId, sizeof(userId));
 	}
