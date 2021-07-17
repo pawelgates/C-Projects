@@ -1,0 +1,11 @@
+ID      Product type        Product name       Entry Date        In store    Price
+1       phone               iphone             29/01/2020,10:39  yes         2500.00 
+2       phone               galaxy             29/01/2020,10:41  yes         1700.00 
+3       notebook            macbook            29/01/2020,10:41  yes         8000.00  
+4       phone               nokia              29/01/2020,10:42  yes         900.00  
+5       notebook            lenovo             29/01/2020,10:42  yes         4600.00 
+6       phone               motorola           29/01/2020,10:42  no          1200.00 
+7       phone               oneplus            29/01/2020,10:43  yes         1900.00 
+8       phone               xiaomi             29/01/2020,10:43  no          2000.00 
+9       notebook            hp                 29/01/2020,10:43  no          2600.00 
+10      notebook            dell               29/01/2020,10:44  yes         5400.00 
